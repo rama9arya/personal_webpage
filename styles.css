@@ -1,0 +1,280 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', comic;
+    margin: 0;
+    padding: 0;
+    background: url('body-background.jpg') no-repeat center center fixed;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: url('header-background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    animation: changeColor 10s infinite alternate;
+}
+
+header h1 {
+    font-size: 3em;
+    animation: fadeInDown 1s ease-out;
+    color: white;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Contact details styling */
+.contact-details {
+    background: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.contact-details i {
+    margin-right: 8px;
+}
+
+/* Content Section */
+section.content {
+    padding: 50px;
+    color: #333;
+    text-align: center;
+}
+
+section.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+section.content p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bio:hover {
+    transform: translateY(-10px);
+}
+
+.bio img {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bio img:hover {
+    transform: scale(1.1);
+}
+
+.projects, .contact, .skills, .education, .blog {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projects:hover, .contact:hover, .skills:hover, .education:hover, .blog:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.projects ul, .skills ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects ul li, .skills ul li, .education ul li {
+    margin-bottom: 15px;
+}
+
+.blog .post {
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog .post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.blog .post h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.blog .post p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer copyright style */
+footer p {
+    margin: 0;
+}
+
+/* Hover effect for footer */
+footer p:hover {
+    color: #f3f3f3;
+}
+
+
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #3b5998;
+    }
+    100% {
+        background-color: #00c3ff;
+    }
+}
+
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Header styling */
+table thead th {
+    background-color: #1df0e0;
+    color: white;
+    padding: 12px 15px;
+}
+
+/* Body styling */
+table tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Alternate row background color */
+table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Adding subtle shadow effect */
+table {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scrolling effect for mouse scroll */
+html {
+    scroll-behavior: smooth;
+}
+
